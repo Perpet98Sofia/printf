@@ -31,7 +31,7 @@ int print_reversed(va_list arg);
 void _write_char(char c);
 int print_percent(va_list);
 void write_base(char *str);
-int print_pointer(va_list types);
+int print_pointer(const void *ptr);
 
 /* Funciotns to handle other specifiers */
 int get_flags(const char *format, int *i);
