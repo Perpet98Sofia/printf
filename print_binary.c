@@ -42,16 +42,13 @@ int print_binary(unsigned int num)
 	}
 	/*print the binary representation*/
 	count = 0;/*compute count*/
-	if (index < 0) {
-            index = 0;
-	}
-         	
+if (index < 0)
+index = 0;
 	/*free allocated memory*/
-
-        while (buffer[index]) 
+while (buffer[index])
 	{
-         _printf("%c\n", buffer[index++]);
-	} 
-       	free(buffer);
-        return(count++);
-}	
+_printf("%c\n", buffer[index++]);
+	}
+free(buffer);
+return (count++);
+}
